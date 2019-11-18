@@ -10,7 +10,6 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   box-sizing: border-box;
-
 }
 
 body {
@@ -29,6 +28,10 @@ img {
   display: none;
 }
 
+.photo:nth-child(5) {
+  display: none;
+}
+
 @media only screen and (min-width: 25em) {
 
   img {
@@ -36,14 +39,15 @@ img {
   }
 
   .photo {
-    display: flex;
-    flex-wrap: wrap;
     width: 50%;
   }
 
   .photo:nth-child(2) {
-    display: flex;
-    flex-wrap: wrap;
+    display: inline-block;
+  }
+
+  .photo:nth-child(5) {
+    display: inline-block;
   }
 
   section {
@@ -60,7 +64,7 @@ img {
 @media only screen and (min-width: 38em) {
 
   .photo {
-    width: 33.333%
+    width: 33.3333%;
   }
 
   .photo:first-child {
@@ -76,11 +80,11 @@ img {
 @media only screen and (min-width: 60em) {
 
   .photo:first-child {
-    width: 66.666%;
+    width: 66.6666%;
   }
 
   .photo:nth-child(5) {
-    display: flex;
-    flex-wrap: wrap;
+    display: inline-block;
   }
-}
+
+ }
